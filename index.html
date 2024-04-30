@@ -7,81 +7,163 @@
     <link rel="stylesheet" href='stylesheet.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <style>
+        #navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: #bab3b3;
+            z-index: 1000;
+            padding: 10px;
+            height: 50px;
+        }
+
+      #navbar a {
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+        body {
+            padding-top: 50px;
+        }
+
+        .bar {
+            padding: 10px;
+        }
+
+        .bar-item {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .hide-small {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hide-small {
+                display: block;
+            }
+        }
+    </style>
+ 
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+
+    <style>
+        img {
+            border-radius: 50%;
+            }
+    </style>
+
+<!-- Additional style for the second image-->
+    <style>
+        .second-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 0;
+  /* Add any additional styling you want for the second image */
+                      }
+    </style>
+
 </head>
 
-<body style="background-color: rgb(223, 232, 241);
+<body>
+
+<!-- Navbar (sit on top) -->
+<div id="navbar">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <body class='box-light-grey'>
+    
+    <div class='content margin-top' style='max-width:1400px;'>
 
-  <!-- Navbar (sit on top) -->
-  <div class="top">
-    <div class="bar grid-padding card" style="letter-spacing:4px;">
-      <a href="index.html" class="bar-item button">W. Schwalenberg</a>
-      <!-- Right-sided navbar links. Hide them on small screens -->
-      <div class="float-right hide-small">
-        <a href="projects.html" class="bar-item button">My Projects</a>
-      </div>
-    </div>
-  </div>
+<div class='grid-padding'>
 
-  <div class="main">
-
-  <div class='grid-padding'>
-
-    <div class='grid-third'>
+    <div class='grid'>
 
       <div class="card-4">
         <div class="display-container">
-          <img src="images/Avatar.jpg" style="width:100%" alt="wschwal's profile image">
+          <img src="images/Avatar.jpg" alt="wschwal's profile image" style="width:30%" width="300" height="400" class="center">
         </div>
 
         <div class="container">
-          <h2>Wolfgang Schwalenberg (金偉剛)&#8203;</h2>
-          <p><i class="fa fa-briefcase fa-fw margin-right"></i>Graduate Student</p>
-          <p><i class="fa fa-home fa-fw margin-right"></i>Binghamton University - Department of History</p>
-          <p><i class="fa fa-envelope fa-fw margin-right"></i>wschwal1@&#8203;binghamton.edu</p>
-          <hr>
-
-          <h5><b><i class="fa fa-asterisk fa-fw margin-right"></i>Research Interests</b></h5>
-          <ul>
-            <li>Modern China</li>
-            <li>Modern Europe</li> 
-            <li>History of Science & Technology</li>
-            <li>Imperialism</li>
-          </ul>
-
-        <h5><b><i class="fa fa-globe fa-fw margin-right"></i>Languages</b></h5>
-        <p>German</p>
-        <p>English</p>
-        <p>Chinese</p>
-      </div>
+          <h2><center>Wolfgang Schwalenberg</center></h2>
+          <h3><center>Aspiring Historian</center></h3>
+        </div>
     </div><br>  
 
-  </div>
+</div>
 
-  <div class ="grid-twothird">
-    <div class="container card margin-bottom">
-      <h5><i class="fa fa-user-o fa-fw margin-right"></i>About Me</h5>
-        <p>I am a graduate student in the history department at Binghamton University where I am pursuing a PhD.</p>
-        <p>My research interests focus on the complex intricacies of modern Chinese and European history, the history of science and technology, and imperialism.</p>
+<!-- Content -->
+<div style="padding-top: 10px; padding-left: 20px; padding-right: 20px;">
+
+<!-- about me information goes here-->
+  <div class ="grid">
+
+    <div class="container card" id="about">
+      <h5><i class="fa fa-user-o fa-fw margin-right"></i>About</h5>
+      <div class="container"></div>
+      
+        <p>Wolfgang Schwalenberg is a graduate student in the Department of History department at Binghamton University where he is pursuing a PhD.</p>
+        <p>His research interests focus on the complex intricacies of modern Chinese and European (particularly German) history, the history of science and technology, and imperialism.</p>
         <p>Main adviser: Dr. Fa-ti Fan</p>
-    </div>
+    <h5><b><i class="fa fa-asterisk fa-fw margin-right"></i>Research Interests</b></h5>
+    <ul>
+      <li>Modern China</li>
+      <li>Modern Europe</li> 
+      <li>History of Science & Technology</li>
+      <li>Imperialism</li>
+    </ul>
+        <h5><i class="fa fas fa-university fa-fw margin-right"></i>Education</h5>
+            <p>BA Chinese Language & Literature, CUNY Hunter College, May 2022</p>
+            <p>MA History, SUNY Binghamton, expected May 2024
 
-    <div class="container card">
-      <h5><i class="fa fa-suitcase fa-fw margin-right"></i>Digital Projects</h5>
+        <h5><i class="fa fa-globe fa-fw margin-right"></i>Languages</i></h5>
+            <p>German</p>
+            <p>English</p>
+            <p>Chinese</p>
+
+    </div><br>
+
+    <!-- research information goes here-->
+    <div class="container card" id="research">
+      <h5><i class="fa fa-book fa-fw margin-right"></i>Research</h5>
       <div class="container">
-        <h6 class="w3-opacity"><b>Tracing Democracy (tentative title)</b></h6>
-        <a href="">Link to project</a>
-        <p>This project will trace the development of terms related to democracy in China during the late Qing and Republican periods.</p>
+
+        <p>In addition to the conventional methods of historical science, I also employ the possibilities of digital history methods to gain insights that would hardly be achievable with analog methods. My project "War on Their Minds" uses various computational methods to examine a database in which Chinese newspapers are stored. The aim of this study is to understand to what extent concepts related to democracy in Republic-era China were discussed in newspapers or whether other topics, such as war, predominated.</p>
+        <p>For this purpose, I examined 2,187 front pages of various Chinese newspapers from the period 1914 to 1949 using various methods such as web scraping and Python codes programmed for this purpose for certain keywords that are related to both "democracy" and "war."</p>
+        <img src="images/frequency-minzhu-zhan.png" alt="Frequency of the terms democracy and war" class="second-image">
+
+        <p>The results of this project and its documentation can be viewed here:</p>
+        <a href="https://github.com/wschwal1/dh-term-paper/tree/main">Link to project</a>
+        <p></p>
       </div>
     </div><br>
 
-    <div class ="grid-twothird">
-        <div class="container card margin-bottom">
-          <h5><i class="fa fas fa-university fa-fw margin-right"></i>Education</h5>
-            <p> BA Chinese Language & Literature, CUNY Hunter College, May 2022</p>
-            <p>MA History, SUNY Binghamton, expected May 2024
+<!-- contact information goes here-->
+    <div class="container card" id="contact">
+        <h5><i class="fa fa-suitcase fa-fw margin-right"></i>Contact</h5>
+        <div class="container">
+
+          <p><i class="fa fa-home fa-fw margin-right"></i>Binghamton University, Department of History, 4400 Vestal Pkwy E, Binghamton, NY 13902, USA</p>
+          <p><i class="fa fa-envelope fa-fw margin-right"></i>wschwal1@&#8203;binghamton.edu</p>
+          <p><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/wolfgang-schwalenberg-83649a16b" target="_blank">Connect with me!</a></p>
         </div>
+      </div><br>
     
 
       </div>
@@ -95,9 +177,9 @@
 </div>
 
 <footer class="container grid-center margin-top">
-  <p>Connect with me:</p>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
+</html>
